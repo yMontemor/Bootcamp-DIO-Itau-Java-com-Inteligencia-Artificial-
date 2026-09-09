@@ -39,5 +39,15 @@ public class Produto {
         }
     }
 
+    public void adicionarEstoque(int quantidade){
+        if (quantidade > 0){
+            this.quantidade = this.quantidade + quantidade;
+        }
+    }
 
+    public void removerEstoque(int quantidade){
+        if (quantidade > 0 && quantidade <= this.quantidade){
+            this.quantidade = this.quantidade - quantidade;
+        }
+    }
 }
