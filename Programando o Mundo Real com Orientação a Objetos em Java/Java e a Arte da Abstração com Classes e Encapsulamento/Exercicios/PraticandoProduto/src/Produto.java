@@ -50,4 +50,10 @@ public class Produto {
             this.quantidade = this.quantidade - quantidade;
         }
     }
+
+    public void aplicarDesconto(double percentual){
+        if (percentual > 0 && percentual <= 100) {
+            this.preco = this.preco - (percentual * this.preco / 100) ;
+        }
+    }
 }
