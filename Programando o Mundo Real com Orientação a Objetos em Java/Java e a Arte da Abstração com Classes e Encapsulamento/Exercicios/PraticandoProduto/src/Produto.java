@@ -4,9 +4,9 @@ public class Produto {
     private int quantidade; // atributo do objeto que será criado
 
     public Produto(String nome, double preco, int quantidade) { // parâmetros
-            this.nome = nome;               // O atributo do objeto recebe o parâmetro nome
-            this.preco = preco;             // O atributo do objeto recebe o parâmetro preço
-            this.quantidade = quantidade;   // O atributo do objeto recebe o parâmetro quantidade
+            setNome(nome);
+            setPreco(preco);
+            setQuantidade(quantidade);
     }
 
     public String getNome() { // metodo usado para obter/consultar valor encapsulado
