@@ -165,6 +165,17 @@ public class Carro {
     public int verificarVelocidade(){
         return velocidadeAtual;
     }
+
+    public int verificarMarcha(){
+        return marchaAtual;
+    }
+
+    public String verificarLigado() {
+        if (ligado) {
+            return "Ligado";
+        }
+            return "Desligado";
+    }
 }
 
 

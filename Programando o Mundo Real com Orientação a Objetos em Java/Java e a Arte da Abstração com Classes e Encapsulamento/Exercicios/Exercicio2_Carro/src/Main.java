@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         Carro carro1 = new Carro();
+        System.out.println("O carro está: " + carro1.verificarLigado());
 
         // Liga o carro
         carro1.ligar();
@@ -110,8 +111,12 @@ public class Main {
 
         // 1ª -> ponto morto
         carro1.trocarMarcha(0);
+        System.out.println("Marcha atual: " + carro1.verificarMarcha());
+        System.out.println("O carro está: " + carro1.verificarLigado());
 
         // Desligar
         carro1.desligar();
+        System.out.println("O carro está: " + carro1.verificarLigado());
+
     }
 }
